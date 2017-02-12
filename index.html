@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cross origin</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="cross-domain.js"></script>
+</head>
+<body>
+    <button onclick="getFile('https://www.pplbalik.cz/Main3.aspx?cls=KTMMap&CountryCode=CZ&ReturnUrl=http://pehu.info/index.html', 'html',
+    function(response)
+    {
+    console.log(response);
+    })">
+
+   Get cross origin </button>
+</body>
+</html>
